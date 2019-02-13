@@ -17,7 +17,7 @@ echo "       to see if you have a libpartialzip"
 echo "                 folder already."
 echo ""
 echo "         Will also attempt to install"
-echo "          XCode command line tools, so"
+echo "          Xcode command line tools, so"
 echo "        follow instructions if prompted"
 echo ""
 
@@ -32,7 +32,7 @@ cd
 
 
 # attempts to install XCode tools
-echo "==> XCode Tools..."
+echo "==> Xcode Tools..."
 
 xcode-select --install
 
