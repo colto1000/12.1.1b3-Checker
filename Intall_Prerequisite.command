@@ -12,16 +12,13 @@
 # prompt to user
 echo " >> colto1000's script to install libpartialzip <<"
 echo ""
-echo "        ONLY CONTINUE IF YOU DO NOT HAVE"
-echo "        LIBPARTIALZIP ALREADY INSTALLED!"
-echo ""
 echo "        You can check your /Users/<user>"
 echo "       to see if you have a libpartialzip"
 echo "                 folder already."
 echo ""
 echo "         Will also attempt to install"
 echo "          XCode command line tools, so"
-echo "         follow instructions if prompted"
+echo "        follow instructions if prompted"
 echo ""
 
 # verifies user is okay to continue
