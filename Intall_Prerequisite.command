@@ -6,7 +6,7 @@
 # Enjoy!
 
 
-#! /bin/bash
+#!/usr/bin/env bash
 
 
 # prompt to user
