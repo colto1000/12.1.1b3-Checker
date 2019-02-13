@@ -41,24 +41,14 @@ echo ""
 #  ...and hides output of "rm"
 echo "==> File cleanup"
 rm BuildManifest.plist > /dev/null 2>&1
-rm tsschecker-s0.zip > /dev/null 2>&1
-rm tsschecker > /dev/null 2>&1
 
 echo ""
 
 
 # downloads s0uthwest's fork of tsschecker
-echo "==> Installing s0uthwest/tsschecker v336"
+echo "==> Installing tsschecker-s0uthwest"
 
-curl -o tsschecker-s0.zip https://github.com/s0uthwest/tsschecker/releases/download/336/tsschecker_macOS_v336.zip -\# -O -J -L
-
-echo ""
-
-
-# un-zips file using "unzip" command
-echo "==> Unzipping tsschecker-s0.zip"
-
-unzip -q tsschecker-s0.zip
+brew install tsschecker-s0uthwest
 
 echo ""
 
@@ -76,7 +66,7 @@ echo ""
 #  with iPhone11,6 BuildManifest.plist
 echo "==> Running check"
 
-./tsschecker -m BuildManifest.plist -d iPhone11,6 --beta -i 12.1.1 --buildid 165050a
+tsschecker -m BuildManifest.plist -d iPhone11,6 --beta -i 12.1.1 --buildid 165050a
 
 echo "    ^^^  RESULT   ^^^"
 
@@ -87,8 +77,6 @@ echo ""
 echo "==> File cleanup"
 
 rm BuildManifest.plist > /dev/null 2>&1
-rm tsschecker-s0.zip > /dev/null 2>&1
-rm tsschecker > /dev/null 2>&1
 
 echo ""
 
