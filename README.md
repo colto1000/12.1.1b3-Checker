@@ -1,5 +1,5 @@
 # 12.1.1b3-Checker for Noobs!
-Checks to see if iOS 12.1.1 beta 3 is still being signed. Could be modified to check different versions of iOS or do much more!
+Checks to see if iOS 12.1.1 beta 3 is still being signed -- made super simple!
 
 Use Install_Prerequisite.command if you do not have XCode Command-Line Tools or if you do not have libpartialzip
 
