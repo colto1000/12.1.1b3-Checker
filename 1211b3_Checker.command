@@ -7,7 +7,7 @@
 # Enjoy!
 
 
-#! /bin/bash
+#!/usr/bin/env bash
 
 # cd's into the directory of the script
 cd "$(dirname "$BASH_SOURCE")" || {
