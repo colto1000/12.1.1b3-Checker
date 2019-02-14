@@ -1,7 +1,8 @@
-# 12.1.1b3-Checker v2 for Noobs!
+# 12.1.1b3-Checker v2.1 for Noobs!
 Checks to see if iOS 12.1.1 beta 3 is still being signed -- made <em>even more</em> super simple! <br />
 
 All prerequisites will now be checked for <em>(and installed if needed)</em> during the script! Hooray! <br />
+Use of a `runtime` directory added in v2.1! <br />
 
 <strong>SPECIAL THANKS TO:</strong> <br />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\* <strong>u/01110101_00101111</strong> (GitHub: airsquared) for helping with MAJOR improvements in v2! \*\* <br />
