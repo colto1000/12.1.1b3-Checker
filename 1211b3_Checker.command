@@ -1,23 +1,20 @@
 # Created by u/colto1000
+#
 #  Thank you to...
-#    s0uthwest for fork of tsschecker
+#    u/01110101_00101111 for helping with MAJOR improvements in v2!
+#    u/s0uthwes (s0uthwest) for fork of tsschecker
 #    tihmstar for tsschecker and libpartialzip
 #    r/jailbreak for being awesome
 #
 # Enjoy!
 
 
-#! /bin/bash
-
-# cd's into the directory of the script
-cd "$(dirname "$BASH_SOURCE")" || {
-echo "Error getting script directory" >&2
-exit 1
-}
+#! /user/bin/env bash
 
 
 # prompt to user
-echo " >> colto1000's iOS 12.1.1 beta 3 Signed Checker v1 <<"
+echo ""
+echo " >> colto1000's iOS 12.1.1 beta 3 Signed Checker v2! <<"
 echo ""
 echo "       Uses iOS BuildManifest.plist from XS Max,"
 echo "      but this should still apply to all devices."
@@ -27,14 +24,58 @@ echo ""
 echo "      Make sure this script is placed in an *EMPTY*"
 echo "                       directory."
 echo ""
-echo "         Also make sure that you have partialzip"
-echo "                       installed."
+echo "         This script will also check/install the"
+echo "                  prerequisites needed."
+echo "       (libpartialzip and Xcode Command-Line Tools)"
 echo ""
 
 # verifies user is okay to continue
 read -n 1 -s -r -p "            >> Press ANY KEY to continue. <<"
 echo ""
 echo ""
+
+
+# cd's program into user directory
+cd
+
+
+# checks for Xcode command line tools
+#  installs if not found
+echo "==> Checking for Xcode Command-Line Tools"
+
+xcode-select -p > /dev/null 2>&1
+
+if [[ $? != 0 ]]
+then
+    echo "Xcode Command-Line Tools not found. Installing..."
+    xcode-select --install
+else
+    echo "Xcode Command-Line Tools is installed."
+fi
+
+echo ""
+
+
+# checks for "libpartialzip" folder in ~
+#  installs if not found
+echo "==> Checking for libpartialzip"
+
+if [ -d libpartialzip ]
+then
+    echo "libpartialzip seems to be installed."
+else
+    echo "libpartialzip not found. Installing..."
+    git clone https://github.com/tihmstar/libpartialzip && cd ./libpartialzip && bash autogen.sh && sudo make install
+fi
+
+echo ""
+
+
+# cd's into the directory of the script
+cd "$(dirname "$BASH_SOURCE")" || {
+echo "Error getting script directory" >&2
+exit 1
+}
 
 
 # cleanup of files used later in the program
