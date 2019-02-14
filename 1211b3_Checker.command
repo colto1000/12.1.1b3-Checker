@@ -1,4 +1,4 @@
-# Created by u/colto1000
+# Created by u/colto1000 and u/01110101_00101111 (GitHub: airsquared)
 #
 #  Thank you to...
 #    u/01110101_00101111 for helping with MAJOR improvements in v2!
@@ -14,7 +14,7 @@
 
 # prompt to user
 echo ""
-echo " >> colto1000's iOS 12.1.1 beta 3 Signed Checker v2.1! <<"
+echo " >> colto1000's iOS 12.1.1 beta 3 Signed Checker v2.1.1! <<"
 echo ""
 echo "       Uses iOS BuildManifest.plist from XS Max,"
 echo "      but this should still apply to all devices."
