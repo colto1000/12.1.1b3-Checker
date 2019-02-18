@@ -9,7 +9,7 @@
 # Enjoy!
 
 
-#! /user/bin/env bash
+#! /usr/bin/env bash
 
 
 # prompt to user
